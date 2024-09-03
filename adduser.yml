@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: add user
+    user:
+      name: basavaraj
+      state: present
+  - name: create group
+    group:
+      name: devops
+      state: present

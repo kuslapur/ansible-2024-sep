@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: copy file
+    copy:
+      src: /home/ubuntu/copyfile
+      dest: /home/ubuntu

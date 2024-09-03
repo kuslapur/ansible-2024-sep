@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: install software
+    apt:
+     name: wget
+     state: present

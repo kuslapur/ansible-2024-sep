@@ -1,0 +1,8 @@
+---
+- name: copy module
+  hosts: localhost
+  tasks:
+    - name: copy file
+      copy:
+        src: /home/ubuntu/ansible/ansible-2024-sep/democopy.txt
+        dest: /home/ubuntu/ansible/ansible-2024-sep/

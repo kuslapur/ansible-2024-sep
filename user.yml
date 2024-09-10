@@ -1,0 +1,9 @@
+---
+- name: add user
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: add user
+      user:
+        name: basavaraj
+        state: present

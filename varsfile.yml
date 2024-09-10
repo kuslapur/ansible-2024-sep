@@ -1,0 +1,13 @@
+--- 
+- hosts: all
+  become: yes
+  vars:
+    port_no: 80
+    var: "httpd"
+
+  gather_facts: no 
+  tasks:
+  - debug:
+      msg:
+       - "The value of port is {{port_no}}"
+       - "The value of package name {{var}}"

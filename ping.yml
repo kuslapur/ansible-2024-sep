@@ -1,0 +1,7 @@
+---
+- name: connectivity tets
+  hosts: localhost
+  tasks:
+    - name: ping connectivity
+      ping:
+
